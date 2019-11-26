@@ -1,0 +1,7 @@
+@import './_variables.scss';
+
+body {
+  font: $base-font-size $base-font-family;
+  line-height: 1.5;
+  color: #333;
+}
