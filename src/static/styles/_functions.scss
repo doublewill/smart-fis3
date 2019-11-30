@@ -1,0 +1,9 @@
+ @function unit-less($value) {
+   @if unitless($value) {
+     @return $value;
+   }
+   @else {
+     @return $value/($value * 0 + 1)
+   }
+ }
+

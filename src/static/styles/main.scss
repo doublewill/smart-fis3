@@ -1,7 +1,11 @@
-@import './_variables.scss';
-
+@import './variables';
+@import './mixins';
+@import './functions';
 body {
-  font: $base-font-size $base-font-family;
-  line-height: 1.5;
-  color: #333;
+    font: $base-font-size $base-font-family;
+    line-height: 1.5;
+    color: #333;
+    font-size: 0.14rem;
+    min-height: 100vh;
+    box-sizing: border-box;
 }

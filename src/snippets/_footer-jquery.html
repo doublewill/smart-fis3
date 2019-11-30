@@ -7,3 +7,16 @@
 <!--[if !IE]>
 <script src="../static/vendors/jquery/jquery-2.2.4.min.js"></script>
 <![endif]-->
+
+<script>
+  const designWidth = 750 //设计宽度
+  
+  function setRootFontSize() {
+    let width = document.documentElement.clientWidth || window.innerWidth || document.body.clientWidth
+    width = width > designWidth ? designWidth : width
+    let root = document.getElementsByTagName("html")[0];
+    root.style.fontSize = width * 100 / designWidth  + 'px'
+  }
+  setRootFontSize() 
+  window.addEventListener('resize', setRootFontSize, false);
+</script>
